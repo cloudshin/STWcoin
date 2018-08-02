@@ -54,8 +54,8 @@ const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BL
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
 
-const uint64_t MINIMUM_FEE                                   = UINT64_C(100000000000);
-const uint64_t MAXIMUM_FEE                                   = UINT64_C(100000000000);
+const uint64_t MINIMUM_FEE                                   = UINT64_C(10000000);
+const uint64_t MAXIMUM_FEE                                   = UINT64_C(10000000);
 
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(0);
 const uint64_t MIN_TX_MIXIN_SIZE                             = 0;
@@ -108,7 +108,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 const char     CRYPTONOTE_NAME[]                             = "STWcoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000180c0d7b5a99854029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210132affdd4d47b3a11478b8a058d43bb675056ebc5dee64f51953355eb75b94a11";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000180fcd0c0f7fa05029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210120deed791458f6f231d24148ffd31b84f556da778675ec3b5e29e0dfcea52797";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
