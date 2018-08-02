@@ -435,7 +435,7 @@ bool Blockchain::init(const std::string& config_folder, bool load_existing) {
   }
 
   if (load_existing && !m_blocks.empty()) {
-    logger(INFO, BRIGHT_WHITE) << "Loading blockchain...";
+    logger(INFO, BRIGHT_WHITE) << "Cleaning ocean...";
     BlockCacheSerializer loader(*this, get_block_hash(m_blocks.back().bl), logger.getLogger());
     loader.load(appendPath(config_folder, m_currency.blocksCacheFileName()));
 
@@ -2542,7 +2542,7 @@ bool Blockchain::storeBlockchainIndices() {
 bool Blockchain::loadBlockchainIndices() {
   std::lock_guard<decltype(m_blockchain_lock)> lk(m_blockchain_lock);
 
-  logger(INFO, BRIGHT_WHITE) << "Loading blockchain indices for BlockchainExplorer...";
+  logger(INFO, BRIGHT_WHITE) << "Cleaning ocean indices for BlockchainExplorer...";
   BlockchainIndicesSerializer loader(*this, get_block_hash(m_blocks.back().bl), logger.getLogger());
 
   loadFromBinaryFile(loader, appendPath(m_config_folder, m_currency.blockchainIndicesFileName()));
