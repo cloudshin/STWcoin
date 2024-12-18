@@ -23,6 +23,8 @@ The example of STWcoin config is here: https://github.com/STWcoin/cryptonote-nod
 
 
 ## Building STWcoin
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcloudshin%2FSTWcoin.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcloudshin%2FSTWcoin?ref=badge_shield)
+
 
 ### On *nix
 
@@ -60,3 +62,6 @@ cmake -G "Visual Studio 12 Win64" ..
 
 And then do Build.
 Good luck and save the Whales!
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcloudshin%2FSTWcoin.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcloudshin%2FSTWcoin?ref=badge_large)
